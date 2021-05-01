@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <!-- 
+        untuk membuat sebuah form
+        gunakan tag <form action="" method="">
+     -->
+     <!-- 
+         Perbedaan method get dan method post adalah, jika kita mengisi atribut method dengan get (dimana ini adalah nilai default seandainya atribut method tidak ditulis) maka isian form akan terlihat pada url browser. Method get ini biasanya digunakan untuk query pencarian. Method post biasanya digunakan untuk data yang lebih sensitif seperti yang berisi password, atau registrasi user. Data hasil form tidak akan terlihat pada browser.
+      -->
+     <form action="" method="GET">
+        <!-- membuat field input text -->
+        <label for="nama">Nama :</label>
+        <input type="text" id="nama" required placeholder="nama lengkap.."><br>
+        <!-- membuat radio button -->
+        <label for="">Kelas :</label>
+        <input type="radio" name="kelas" value="10">10
+        <input type="radio" name="kelas" value="11">11
+        <input type="radio" name="kelas" value="12">12
+        <br>
+        <!-- membuat option select -->
+        <label for="jurusan">Jurusan : </label>
+        <select name="jurusan" id="jurusan">
+            <option value="RPL">RPL</option>
+            <option value="TKJ">TKJ</option>
+            <option value="TITL">TITL</option>
+        </select>
+        <br>
+        <label for="">Hobi : </label>
+        <!-- membuat checkbox -->
+        <input type="checkbox" name="hobi" value="renang">Renang
+        <input type="checkbox" name="hobi" value="bersepeda">Bersepeda
+        <input type="checkbox" name="hobi" value="melukis">Melukis
+        <br>
+        <!-- membuat tombol submit -->
+        <button type="submit">Submit</button>
+     </form>
+</body>
+</html>
